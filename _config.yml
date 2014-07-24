@@ -5,6 +5,7 @@ pygments:         false
 permalink:        pretty
 
 # Settings
+markdown:         kramdown
 destination:      ./_gh_pages
 exclude:          ["README.md"]
 paginate:         10
