@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Built with Ember is a showcase of ambitious and inspirational web applications using [Ember.js](http://emberjs.com). It's designed, built, and maintained by the [Blimp](http://getblimp.com) crew.
+Built with Ember is a showcase of ambitious and inspirational web applications using [Ember.js](http://emberjs.com). It's designed, built, and maintained by the [Blimp](http://blimp.io) crew.
 
 
 ## Submissions
