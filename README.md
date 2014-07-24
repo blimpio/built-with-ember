@@ -11,3 +11,11 @@ We are trying to keep the site submission quality as high as possible. Please on
 To submit a site suggestions, [open an issue](https://github.com/GetBlimp/built-with-ember/issues/new) or create a pull request. Pull requests will be given higher priority since they are easier to include.
 
 Make sure the screenshot is **1000x800** and please double check that everything looks good before submitting.
+
+### Running the site locally
+```
+$ gem install jekyll
+$ git clone https://github.com/GetBlimp/built-with-ember.git
+$ cd built-with-ember
+$ jekyll serve --watch
+```
