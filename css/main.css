@@ -1,0 +1,161 @@
+---
+layout: nil
+---
+{% include css/bootstrap.min.css %}
+
+body {
+  color:#3f3f3f;
+  font-family: 'Droid Serif', serif;
+  margin-right:20px;
+}
+
+.site-name {
+  color:#3f3f3f;
+}
+
+.site-name:hover {
+  text-decoration: none;
+  color:#3f3f3f;
+}
+
+.main-sidebar {
+  position:fixed;
+  width:240px;
+  margin-left:30px;
+
+}
+
+h1 {
+  margin-top:0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #7f7f7f;
+}
+
+.byline {
+  font-size: 12px;
+  color:#bfbfbf;
+}
+
+.main-container {
+  margin:40px 0 0 330px;
+}
+
+.main-sidebar-hr {
+  margin: 30px 0;
+}
+
+.screenshot-link:hover {
+  text-decoration: none;
+}
+
+.posts {
+  max-width: 1004px;
+}
+
+.posts li {
+  margin-bottom:70px;
+}
+
+.post-description {
+  text-align: center;
+  margin-top:20px;
+}
+
+.post-description-title {
+  font-size: 37px;
+}
+
+.post-description-date {
+  color: #a2a2a2;
+}
+
+.post-description-link {
+  color: black;
+}
+
+/************/
+/* Browser */
+/************/
+.browser-frame {
+  border-radius: 5px;
+  border: 2px solid #CCC;
+  width:100%;
+  max-width: 1004px;
+}
+
+.browser-top-bar {
+  border-bottom: 2px solid #CCC;
+  width:100%;
+  float:left;
+}
+
+.browser-address {
+  border-radius: 5px;
+  background: #efefef;
+  height: 25px;
+  float:right;
+  margin: 10px;
+}
+
+.browser-button-wrapper {
+  padding: 12px 0 0 10px;
+  float:left;
+}
+
+.browser-button {
+  display:inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCC;
+}
+
+.browser-container > p {
+  padding:0;
+  margin:0;
+}
+
+.browser-container img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* xs */
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-sidebar {
+    position: inherit;
+    margin-top: 20px;
+  }
+
+  .main-container {
+    margin: 40px 0 0 20px;
+  }
+
+  .browser-address {
+    width:80%;
+  }
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  .browser-address {
+    width:83%;
+  }
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .browser-address {
+    width:89%;
+  }
+}
+
+/* lg */
+@media (min-width: 1200px) {
+  .browser-address {
+    width:91%;
+  }
+}
