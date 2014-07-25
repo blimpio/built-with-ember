@@ -12,7 +12,7 @@ We do not accept all submissions. We only select comprehensive examples of build
 
 ## How to submit
 
-To submit a site suggestion, [open an issue](https://github.com/getblimp/built-with-ember/issues/new) or **create a pull request**. Pull requests will be given higher priority since they are easier to include. Make sure the screenshot is 1000x800 and please double check that everything looks good before submitting.
+To submit a site suggestion, [open an issue](https://github.com/getblimp/built-with-ember/issues/new) or **create a pull request**. Pull requests will be given higher priority since they are easier to include. Make sure the screenshot is 1000x800 and please double check that everything looks good before submitting. It's also a good idea to run the screenshot through an image optimizer like [ImageOptim](https://imageoptim.com/) or [TinyPNG](https://tinypng.com/) before including it. This will help keep the website fast and the repository small as possible.
 
 ## About the site
 
