@@ -10,7 +10,7 @@ We are trying to keep the site submission quality as high as possible. Please on
 ### How to submit
 To submit a site suggestions, [open an issue](https://github.com/GetBlimp/built-with-ember/issues/new) or create a pull request. Pull requests will be given higher priority since they are easier to include.
 
-Make sure the screenshot is **1000x800** and please double check that everything looks good before submitting. It's also a good idea to run the screenshot through and image optimizer like [ImageOptim](https://imageoptim.com/) or [TinyPNG](https://tinypng.com/) before including it. This will help keep the website fast and the repository small as possible.
+Make sure the screenshot is **1000x800** and please double check that everything looks good before submitting. It's also a good idea to run the screenshot through an image optimizer like [ImageOptim](https://imageoptim.com/) or [TinyPNG](https://tinypng.com/) before including it. This will help keep the website fast and the repository small as possible.
 
 ### Running the site locally
 ```
