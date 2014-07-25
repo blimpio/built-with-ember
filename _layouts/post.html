@@ -7,7 +7,8 @@ layout: default
     <h3 class="post-description-title"><a href="{{ page.url }}" class="post-description-link">{{ page.title }}</a></h3>
     <p class="post-description-date">{{ page.date | date: "%B %-d, %Y" }}</p>
   </div>
-  <a href="{{ link }}" class="screenshot-link">
+
+  <a href="{{ page.source }}" class="screenshot-link">
     <div class="browser-frame">
       <div class="browser-top-bar">
         <div class="browser-button-wrapper">
@@ -18,7 +19,7 @@ layout: default
         <div class="browser-address"></div>
       </div>
       <div class="browser-container">
-        {{ content }}
+        {{ page.content }}
       </div>
     </div>
   </a>
