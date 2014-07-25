@@ -5,8 +5,8 @@ layout: nil
 
 body {
   color:#3f3f3f;
-  font-family: 'Droid Serif', serif;
   margin-right:20px;
+  font-size:16px;
 }
 
 .site-name {
@@ -20,9 +20,8 @@ body {
 
 .main-sidebar {
   position:fixed;
-  width:240px;
+  width:230px;
   margin-left:30px;
-
 }
 
 h1 {
@@ -40,7 +39,7 @@ h1 {
 }
 
 .main-container {
-  margin:40px 0 0 330px;
+  margin:40px 0 0 310px;
 }
 
 .main-sidebar-hr {
