@@ -13,3 +13,4 @@ encoding:         UTF-8
 future:           false
 name:             Built With Ember
 url:              http://builtwithember.io
+description:      "Ambitious web applications built using Ember.js."
