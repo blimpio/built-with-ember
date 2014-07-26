@@ -5,7 +5,7 @@ title: Home
 
 <div id="home">
   <ul class="posts list-unstyled">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <a href="{{ post.source }}" class="screenshot-link" target="_blank">
           <div class="browser-frame">
@@ -29,4 +29,5 @@ title: Home
       </li>
     {% endfor %}
   </ul>
+  {% include pagination.html %}
 </div>

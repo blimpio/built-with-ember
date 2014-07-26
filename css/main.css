@@ -75,6 +75,50 @@ h1 {
   color: black;
 }
 
+/*************/
+/* Paginator */
+/*************/
+.paginator {
+  width:100%;
+  max-width: 1004px;
+  margin-bottom:40px;
+  float:left;
+}
+.paginate {
+  display:block;
+  float:left;
+  width:50%;
+  padding:20px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.paginate.older {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.paginate.newer {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+span.paginate {
+  color: #bfbfbf;
+}
+
+a.paginate:hover {
+  background-color: #44b1f6;
+  text-decoration: none;
+  color:white;
+  border-color: #44b1f6;
+}
+
 
 /************/
 /* Browser */
