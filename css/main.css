@@ -166,6 +166,8 @@ a.paginate:hover {
 .browser-container img {
   width: 100%;
   max-width: 1000px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 /* xs */
