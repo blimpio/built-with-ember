@@ -170,16 +170,19 @@ a.paginate:hover {
   border-bottom-right-radius: 3px;
 }
 
+
+/* mobile navigation */
+.mobile-navigation {
+  margin: 20px 0 0 20px;
+}
+
+
 /* xs */
 @media (min-width: 0px) and (max-width: 767px) {
   .main-sidebar {
     position: inherit;
     margin: 20px;
     width: 100%;
-  }
-
-  .main-sidebar-hr {
-    margin-right:20px;
   }
 
   .main-container {
@@ -189,12 +192,25 @@ a.paginate:hover {
   .browser-address {
     width:74%;
   }
+
+  .hidden-xs {
+    display: none;
+  }
+
+  .visible-xs {
+    display: block;
+  }
+
 }
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
   .browser-address {
     width:83%;
+  }
+
+  .visible-xs {
+    display:none;
   }
 }
 
@@ -203,11 +219,19 @@ a.paginate:hover {
   .browser-address {
     width:89%;
   }
+
+  .visible-xs {
+    display:none;
+  }
 }
 
 /* lg */
 @media (min-width: 1200px) {
   .browser-address {
     width:91%;
+  }
+
+  .visible-xs {
+    display:none;
   }
 }

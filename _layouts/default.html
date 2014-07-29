@@ -25,10 +25,13 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 </head>
 <body>
-  <div class="main-sidebar">
-    <h1><a href="/" class="site-name">Built With Ember</a></h1>
-    <p class="subtitle">Ambitious web applications built using <a href="http://emberjs.com">Ember.js</a>.</p>
-    <p class="byline">Brought to you by <a href="http://blimp.io">Blimp</a></p>
+  <div class="mobile-navigation visible-xs">
+    {% include branding.html %}
+    <hr class="main-sidebar-hr">
+  </div>
+
+  <div class="main-sidebar hidden-xs">
+    {% include branding.html %}
 
     <hr class="main-sidebar-hr">
 
