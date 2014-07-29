@@ -4,9 +4,10 @@ layout: nil
 {% include css/bootstrap.min.css %}
 
 body {
-  color:#3f3f3f;
+  color:#7f7f7f;
   margin: 0 20px 20px 0;
-  font-size:18px;
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 27px;
 }
 
 .site-name {
@@ -25,17 +26,15 @@ body {
   font-size: 14px;
 }
 
-h1 {
-  margin-top:0;
-  font: 55px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  line-height: 60px;
+h2 {
+  color: black;
 }
 
-.branding-ember {
-  font-size: 78px;
-  position:relative;
-  left:-2px;
+h1 {
+  margin-top:0;
+  font-size: 47px ;
+  font-weight: 200;
+  line-height: 50px;
 }
 
 .subtitle {
@@ -179,14 +178,6 @@ a.paginate:hover {
   border-bottom-right-radius: 3px;
 }
 
-
-/* mobile navigation */
-.mobile-navigation {
-  margin: 30px 0 0 20px;
-  font-size: 14px;
-}
-
-
 /* xs */
 @media (min-width: 0px) and (max-width: 767px) {
   .main-sidebar {
@@ -196,7 +187,7 @@ a.paginate:hover {
   }
 
   .main-sidebar-hr {
-    margin: 20px 0;
+    margin: 20px 20px 20px 0;
   }
 
   .main-container {

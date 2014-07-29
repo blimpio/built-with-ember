@@ -25,20 +25,18 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 </head>
 <body>
-  <div class="mobile-navigation visible-xs">
-    {% include branding.html %}
-    <hr class="main-sidebar-hr">
-    {% include navigation.html %}
-    <hr class="main-sidebar-hr">
-  </div>
+  <div class="main-sidebar">
+    <h1><a href="/" class="site-name">Built With Ember</a></h1>
+    <p class="subtitle">Ambitious web applications built using <a href="http://emberjs.com">Ember.js</a>.</p>
+    <p class="byline">Brought to you by <a href="http://blimp.io">Blimp</a></p>
 
-  <div class="main-sidebar hidden-xs">
-    {% include branding.html %}
-    <hr class="main-sidebar-hr">
-    {% include navigation.html %}
     <hr class="main-sidebar-hr">
 
-    <ul class="list-unstyled">
+    {% include navigation.html %}
+
+    <hr class="main-sidebar-hr">
+
+    <ul class="list-unstyled hidden-xs">
       <li class="nav-item">
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://builtwithember.io/" data-text="@BuiltWithEmber: A list of ambitious web applications using @emberjs" data-related="BuiltWithEmber" data-count="none">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
