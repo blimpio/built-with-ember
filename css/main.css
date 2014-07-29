@@ -155,7 +155,7 @@ a.paginate:hover {
 }
 
 .browser-button-wrapper {
-  padding: 12px 0 0 10px;
+  padding: 9px 0 0 10px;
   float:left;
 }
 
@@ -205,6 +205,17 @@ a.paginate:hover {
 
   .browser-address {
     width:74%;
+    height: 10px;
+    border-radius: 2px;
+  }
+
+  .browser-button-wrapper {
+    padding-top: 0;
+  }
+
+  .browser-button {
+    height: 8px;
+    width: 8px;
   }
 
   .hidden-xs {
