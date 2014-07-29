@@ -27,6 +27,15 @@ body {
 
 h1 {
   margin-top:0;
+  font: 55px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  line-height: 60px;
+}
+
+.branding-ember {
+  font-size: 78px;
+  position:relative;
+  left:-2px;
 }
 
 .subtitle {
@@ -173,7 +182,8 @@ a.paginate:hover {
 
 /* mobile navigation */
 .mobile-navigation {
-  margin: 20px 0 0 20px;
+  margin: 30px 0 0 20px;
+  font-size: 14px;
 }
 
 
@@ -183,6 +193,10 @@ a.paginate:hover {
     position: inherit;
     margin: 20px;
     width: 100%;
+  }
+
+  .main-sidebar-hr {
+    margin: 20px 0;
   }
 
   .main-container {

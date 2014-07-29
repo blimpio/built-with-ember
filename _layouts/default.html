@@ -28,47 +28,14 @@
   <div class="mobile-navigation visible-xs">
     {% include branding.html %}
     <hr class="main-sidebar-hr">
+    {% include navigation.html %}
+    <hr class="main-sidebar-hr">
   </div>
 
   <div class="main-sidebar hidden-xs">
     {% include branding.html %}
-
     <hr class="main-sidebar-hr">
-
-    <ul class="list-unstyled">
-      <li class="nav-item">
-        <a class="nav-link{% if page.title == "Home" %} nav-link-active{% endif %}" href="/">Home</a>
-      </li>
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <li class="nav-item">
-              <a class="nav-link{% if page.url == node.url %} nav-link-active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-            </li>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      <li class="nav-item">
-        <a class="nav-link" href="/about/">Submit a site</a>
-      </li>
-    </ul>
-
-    <hr class="main-sidebar-hr">
-
-    <ul class="list-unstyled">
-      <li class="nav-item">
-        <a class="nav-link" href="http://eepurl.com/ZGHVT">Subscribe</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://twitter.com/builtwithember">Twitter</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/feed.xml">RSS</a>
-      </li>
-    </ul>
-
+    {% include navigation.html %}
     <hr class="main-sidebar-hr">
 
     <ul class="list-unstyled">
