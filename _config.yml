@@ -1,6 +1,3 @@
-# Dependencies
-pygments:         false
-
 # Permalinks
 permalink:        pretty
 
