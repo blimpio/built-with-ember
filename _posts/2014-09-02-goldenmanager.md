@@ -5,4 +5,4 @@ slug: goldenmanager
 source: http://goldenmanager.com/
 ---
 
-<img src="screenshots/gm-screenshot.png">
+<img src="/screenshots/gm-screenshot.png">
