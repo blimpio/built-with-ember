@@ -1,0 +1,21 @@
+<a href="{{ item.source }}" class="screenshot-link" target="_blank">
+  {% if item.hide_browser %}
+    <div class="browser-container">
+      {{ item.content }}
+    </div>
+  {% else %}
+    <div class="browser-frame">
+      <div class="browser-top-bar">
+        <div class="browser-button-wrapper">
+          <div class="browser-button"></div>
+          <div class="browser-button"></div>
+          <div class="browser-button"></div>
+        </div>
+        <div class="browser-address"></div>
+      </div>
+      <div class="browser-container">
+        {{ item.content }}
+      </div>
+    </div>
+  {% endif %}
+</a>
