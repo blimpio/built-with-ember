@@ -31,7 +31,7 @@ h2 {
 
 h1 {
   margin-top:0;
-  font-size: 47px ;
+  font-size: 32px ;
   font-weight: 200;
   line-height: 50px;
 }
@@ -51,7 +51,7 @@ h1 {
 }
 
 .main-sidebar-hr {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .screenshot-link:hover {
