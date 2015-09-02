@@ -39,7 +39,15 @@
 
     <ul class="list-unstyled hidden-xs">
       <li class="nav-item">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://builtwithember.io/" data-text="@BuiltWithEmber: A list of ambitious web applications using @emberjs" data-related="BuiltWithEmber" data-count="none">Tweet</a>
+        {% if page.title == "Home" or page.title == "About" %}
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://builtwithember.io/" data-text="@BuiltWithEmber: A list of ambitious web applications using @emberjs" data-related="BuiltWithEmber" data-count="none">Tweet</a>
+        {% else %}
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}:" data-via="BuiltWithEmber">Tweet</a>
+        {% endif %}
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="https://twitter.com/BuiltWithEmber" class="twitter-follow-button" data-show-count="false">Follow @BuiltWithEmber</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </li>
     </ul>
