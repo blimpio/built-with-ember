@@ -1,6 +1,5 @@
 ---
 layout: post
-hide_browser: true
 title: DaycareIQ
 slug: daycareiq
 source: https://www.daycareiq.com
