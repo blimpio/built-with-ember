@@ -3,7 +3,25 @@ layout: default
 title: Home
 ---
 
+<h2 class="section-title">Featured</h2>
+<div class="featured-posts">
+  <ul class="posts list-unstyled">
+    {% for post in site.categories.featured %}
+      <li>
+        {% assign item = post %}
+        {% include screenshot.html %}
+        </a>
+        <div class="post-description">
+          <h3 class="post-description-title"><a href="{{ post.url }}" class="post-description-link">{{ post.title }}</a></h3>
+          <p class="post-description-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
 <div id="home">
+  <h2 class="section-title">Recent</h2>
   <ul class="posts list-unstyled">
     {% for post in paginator.posts %}
       <li>
