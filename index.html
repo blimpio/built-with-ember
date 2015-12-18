@@ -3,7 +3,29 @@ layout: default
 title: Home
 ---
 
+<h2 class="section-title">Featured</h2>
+<div class="featured-posts">
+  <a href="#" id="goPrev" class="featured-posts-goprev"></a>
+  <div class="featured-posts-container">
+    <ul class="posts list-unstyled">
+      {% for post in site.categories.featured %}
+        <li>
+          {% assign item = post %}
+          {% include screenshot.html %}
+          </a>
+          <div class="post-description">
+            <h3 class="post-description-title"><a href="{{ post.url }}" class="post-description-link">{{ post.title }}</a></h3>
+            <p class="post-description-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <a href="#" id="goNext" class="featured-posts-gonext visible"></a>
+</div>
+
 <div id="home">
+  <h2 class="section-title">Recent</h2>
   <ul class="posts list-unstyled">
     {% for post in paginator.posts %}
       <li>
@@ -19,3 +41,53 @@ title: Home
   </ul>
   {% include pagination.html %}
 </div>
+
+
+<script>
+  $(function () {
+    var $goPrev = $('#goPrev'),
+        $goNext = $('#goNext'),
+        $featuredContainer = $('.featured-posts-container'),
+        scrollDuration = 400,
+        scrollDistance = '480',
+        itemMargin = 15,
+        totalItemsCount = $featuredContainer.find('li').length,
+        totalItemsWidth = ($featuredContainer.find('li:first').outerWidth() + itemMargin) * totalItemsCount,
+        hasScrollReachedTheStart = function () {
+          return $featuredContainer.scrollLeft() === 0;
+        },
+        hasScrollReachedTheEnd = function () {
+          return $featuredContainer.scrollLeft() === totalItemsWidth - $featuredContainer.outerWidth() - 5;
+        };
+
+    // on click logic
+    // moves the scroll bar after clicking on the arrows
+    $goPrev.on('click', function () {
+      $featuredContainer.animate({scrollLeft: '-='+scrollDistance}, scrollDuration);
+      return false;
+    });
+    $goNext.on('click', function () {
+      $featuredContainer.animate({scrollLeft: '+='+scrollDistance}, scrollDuration);
+      return false;
+    });
+
+    // on scroll logic
+    // handles hiding and showing of the arrows
+    // waits for the end of scrolling
+    $featuredContainer.scroll(function () {
+      clearTimeout($.data(this, 'scrollTimer'));
+      $.data(this, 'scrollTimer', setTimeout(function () {
+        if (hasScrollReachedTheStart()) {
+          $goPrev.removeClass('visible');
+          $goNext.addClass('visible');
+        } else if (hasScrollReachedTheEnd()) {
+          $goNext.removeClass('visible');
+          $goPrev.addClass('visible');
+        } else {
+          $goPrev.addClass('visible');
+          $goNext.addClass('visible');
+        }
+      }, 250));
+    });
+  });
+</script>
