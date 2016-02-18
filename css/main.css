@@ -165,6 +165,7 @@ a.paginate:hover {
 }
 
 
+
 /************/
 /* Browser */
 /************/
@@ -188,25 +189,50 @@ a.paginate:hover {
   justify-content: center;
 }
 
+.desktop-container,
 .browser-container {
   border: 1px solid #F1F1F1;
   border-top: 0 none;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 0 0 6px 6px;
 }
 
+.desktop-container {
+  border-top: 1px solid #F1F1F1;
+  border-radius: 6px;
+}
+
+.desktop-container > p,
 .browser-container > p {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
+.desktop-container img,
 .browser-container img {
   width: 100%;
   max-width: 1000px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 0 0 4px 4px;
 }
 
+.desktop-container img {
+  border-radius: 4px
+}
+
+.mobile-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 390px;
+  background-size: contain;
+  background-image: url(/img/mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mobile-container img {
+  width: 100%;
+  height: auto;
+  padding: 18%;
+}
 
 /************/
 /* Featured */

@@ -1,6 +1,10 @@
 <a href="{{ item.source }}" class="screenshot-link" target="_blank">
-  {% if item.hide_browser %}
-    <div class="browser-container">
+  {% if item.is_mobile %}
+    <div class="mobile-container">
+      {{ item.content }}
+    </div>
+  {% elsif item.is_desktop %}
+    <div class="desktop-container">
       {{ item.content }}
     </div>
   {% else %}
