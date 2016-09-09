@@ -5,4 +5,4 @@ slug: the-unopinionated
 source: http://www.theunopinionated.com/
 ---
 
-<img src="/screenshots/the-unopinionated.png" alt="The Unopinionated">
+<img src="/screenshots/theunopinionated.png" alt="The Unopinionated">
