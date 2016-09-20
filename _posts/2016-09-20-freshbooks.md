@@ -5,4 +5,4 @@ slug: freshbooks
 source: https://www.freshbooks.com/
 ---
 
-<img src="/screenshots/freshbook.png" alt="FreshBooks">
+<img src="/screenshots/freshbooks.png" alt="FreshBooks">
