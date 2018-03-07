@@ -2,7 +2,7 @@
 permalink:        pretty
 
 # Settings
-gems:             [jekyll-paginate]
+plugins:             [jekyll-paginate]
 markdown:         kramdown
 destination:      ./_gh_pages
 exclude:          ["README.md"]
